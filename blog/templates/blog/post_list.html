@@ -2,9 +2,21 @@
     <head>
         <title> Lee's Blog</title>
     </head>
-          <body>
-            <p>Hi there!</p>
-            <p>It works!</p>
-            <p>Look Ma- No License!</p>
-          </body>
+    <body>
+      <div>
+        <h1><a href="/">Lee's Blog</a></h1>
+      </div>
+
+      <p>
+        writing html is way way way easier than i would have guessed...
+      </p>
+
+{% for post in posts %}
+          <div>
+              <p>published: {{ post.published_date }}</p>
+              <h1><a href="">{{ post.title }}</a></h1>
+              <p>{{ post.text|linebreaksbr }}</p>
+          </div>
+{% endfor %}
+    </body>
 </html>
