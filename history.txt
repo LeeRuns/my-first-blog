@@ -1,0 +1,12 @@
+C:\
+C:
+cd Users\19008831\Source\Repos\django
+pip install --upgrade pip
+myvenv\Scripts\activate.bat
+pip install --upgrade pip
+pip install django~=1.9.0
+django-admin.py startproject mysite .
+cd djangogirls
+django-admin.py startproject mysite .
+doeskey /HISTORY > history.txt
+doskey /HISTORY > history.txt
