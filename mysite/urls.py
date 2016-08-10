@@ -26,4 +26,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('blog.urls')),
+    url(r'^Boilers/',include('Boilers.urls')),
 ]
